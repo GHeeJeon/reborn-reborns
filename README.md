@@ -169,6 +169,62 @@ Vue.js를 CDN을 통해 불러올 경우, Vue.js 파일을 서버에서 다운�
 </details>
 
 <details>
+<summary>vue 에서 컴포넌트를 사용하는 간단한 예제를 보여줄래?</summary>
+<div markdown="1">
+
+<br>
+  
+네, 간단한 Vue.js 컴포넌트 예제를 보여드리겠습니다. 아래는 "Hello, World!"라는 메시지를 출력하는 간단한 컴포넌트입니다.
+
+```html
+<template>
+  <div>
+    <h1>{{ message }}</h1>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'HelloWorld',
+  data() {
+    return {
+      message: 'Hello, World!'
+    };
+  }
+};
+</script>
+```
+
+위 코드에서 `<template>` 태그는 HTML 템플릿을 작성하는 곳입니다. 이 예제에서는 `<h1>` 태그를 사용하여 "Hello, World!" 메시지를 출력합니다.
+
+`<script>` 태그에서는 Vue.js 컴포넌트를 작성합니다. `name` 속성은 컴포넌트의 이름을 지정하는 곳입니다. `data()` 메소드에서는 `message` 변수를 초기화하고, 템플릿에서 사용할 수 있도록 데이터를 반환합니다.
+
+이렇게 작성된 컴포넌트는 다른 Vue.js 애플리케이션에서 사용할 수 있습니다. 예를 들어, 다른 Vue.js 컴포넌트에서 `HelloWorld` 컴포넌트를 사용하려면 다음과 같이 작성할 수 있습니다.
+
+```html
+<template>
+  <div>
+    <HelloWorld />
+  </div>
+</template>
+
+<script>
+import HelloWorld from './HelloWorld.vue';
+
+export default {
+  name: 'App',
+  components: {
+    HelloWorld
+  }
+};
+</script>
+```
+
+위 코드에서는 `HelloWorld` 컴포넌트를 다른 컴포넌트에서 사용하기 위해 `import` 구문으로 가져옵니다. 이후 `components` 속성에 `HelloWorld` 컴포넌트를 등록하고, 템플릿에서 `<HelloWorld />` 태그를 사용하여 컴포넌트를 출력합니다.
+</div>
+</details>
+  
+<details>
 <summary>네가 보여 준 "Hello, World!"라는 메시지를 출력하는 간단한 컴포넌트를 만들 때, head 나 body 태그 없이 네가 보여 준 코드만 그대로 갖다 쓰면 돼?</summary>
 <div markdown="1">
 
