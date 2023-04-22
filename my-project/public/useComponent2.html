@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>useComponent</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <app></app>
+</div>
+
+<script>
+    Vue.component('my-component', {
+        template: '<div>{{ message }}</div>',
+        data: function() {
+            return {
+                message: 'Hello, Vue.js!'
+            }
+        }
+    })
+
+    // Vue 인스턴스 생성
+    var app = new Vue({
+        el: '#app',
+        components: {
+            'app': {
+                template: '<my-component></my-component>'
+            }
+        }
+    })
+</script>
+
+</body>
+</html>
