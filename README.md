@@ -167,3 +167,38 @@ Vue.js를 CDN을 통해 불러올 경우, Vue.js 파일을 서버에서 다운�
 따라서 `<head>` 태그 내부에 Vue.js 라이브러리 파일을 추가할 때는, `defer`나 `async` 속성을 사용하여 Vue.js 라이브러리 파일이 로드되는 동안 Vue.js를 사용하는 코드의 실행을 지연시키거나, `<script>` 태그를 추가하는 순서를 Vue.js 라이브러리 파일이 먼저 로드되도록 변경해주어야 합니다. 하지만 이는 번거로울 뿐만 아니라 브라우저마다 지원하는 방식이 다를 수 있으므로, 보통은 `<body>` 태그 내부에 Vue.js 라이브러리 파일을 추가하여 사용합니다.
 </div>
 </details>
+
+<details>
+<summary>네가 보여 준 "Hello, World!"라는 메시지를 출력하는 간단한 컴포넌트를 만들 때, head 나 body 태그 없이 네가 보여 준 코드만 그대로 갖다 쓰면 돼?</summary>
+<div markdown="1">
+
+<br>
+
+아니요, Vue.js 컴포넌트를 사용하기 위해서는 Vue.js 라이브러리를 먼저 로드해야 합니다. 일반적으로 Vue.js를 사용하기 위해서는 `<head>` 태그 안에서 Vue.js 라이브러리를 로드하도록 하는 것이 일반적입니다.
+
+또한, Vue.js 컴포넌트를 정의하고 등록하는 코드는 `<body>` 태그 안에서 작성되어야 합니다. 그렇지 않으면 Vue.js가 컴포넌트를 인식하지 못하고 정상적으로 동작하지 않을 수 있습니다.
+
+따라서, Vue.js 애플리케이션을 개발할 때에는 다음과 같이 HTML 파일의 구조를 작성하는 것이 일반적입니다.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Vue.js App</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Vue.js 컴포넌트를 출력하는 영역 -->
+  </div>
+
+  <script>
+    // Vue.js 컴포넌트를 정의하고 등록하는 코드
+  </script>
+</body>
+</html>
+```
+
+위 코드에서는 `<head>` 태그 안에서 Vue.js 라이브러리를 로드하고, `<body>` 태그 안에서 Vue.js 컴포넌트를 출력하는 영역과 컴포넌트를 정의하고 등록하는 코드를 작성합니다.
+</div>
+</details>
