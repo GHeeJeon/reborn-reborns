@@ -133,7 +133,7 @@ const features = computed(() => [
       <div class="flex flex-col items-start w-full h-full px-16 pb-8 mb-4 rounded md:w-1/2 max-w-[500px]">
         <div class="flex flex-col mb-4 md:text-left md:rtl:text-right">
           <h1 class="text-8xl font-bold uppercase text-primary-500 dark:text-primary-400">
-            Vueye
+            Reborn reborns!
             <span class="block text-2xl mt-4 font-bold text-primary-500 dark:text-primary-400">
               {{ t("hero.subtitle") }}
             </span>

@@ -8,11 +8,9 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BurgerMenuBtn: typeof import('./components/app/utils/BurgerMenuBtn.vue')['default']
-    CardStatsHeader: typeof import('./pages/dashboard/_components/CardStatsHeader.vue')['default']
     CollapseTransition: typeof import('./components/app/utils/CollapseTransition.vue')['default']
     ComponentsDemo: typeof import('./components/app/ComponentsDemo.vue')['default']
     ComponentsDemoItem: typeof import('./components/app/ComponentsDemoItem.vue')['default']
-    Counter: typeof import('./components/Counter.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     LanguageToggler: typeof import('./components/app/utils/LanguageToggler.vue')['default']
     Playground: typeof import('./components/app/Playground.vue')['default']
