@@ -158,6 +158,7 @@ const features = computed(() => [
           -->
         </div>
       </div>
+      <!--
       <div
         class="w-full p-4 pr-10 mr-4 bg-gray-100 rounded-lg  dark:bg-primary-800   right-side dark:shadow-primary-800">
         <div class="flex flex-col gap-2">
@@ -217,8 +218,9 @@ const features = computed(() => [
           </div>
         </div>
       </div>
+      -->
     </div>
-
+    <!--
     <div class="px-4 py-32">
       <div class="text-left rtl:text-right">
         <h2 class="text-2xl font-bold text-gray-600 dark:text-gray-400">{{t("features.name")}}</h2>
@@ -240,6 +242,7 @@ const features = computed(() => [
         </div>
       </div>
     </div>
+    -->
 
     <div class="fixed right-2 top-2">
       <div class="space-x-2 rtl:space-x-reverse flex">
