@@ -17,7 +17,7 @@ const { t } = useI18n()
   <header
     :class="` pr-2 pl-2 transition-padding duration-700 w-full  md:fixed right-0 z-20 flex flex-col items-center justify-center md:justify-between  px-4 py-2 space-y-2 shadow-md  md:py-0 md:space-y-none md:h-16 md:flex-row bg-white dark:bg-primary-900`">
     <div class="flex items-center justify-center h-16 text-5xl pl-4">
-      <RouterLink to="/" class="i-carbon-flash-filled text-primary-400" aria-label="go to home" />
+      <RouterLink to="/" class="i-carbon-home text-primary-400" aria-label="go to home" />
     </div>
 
     <div>
