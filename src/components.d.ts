@@ -12,7 +12,6 @@ declare module '@vue/runtime-core' {
     ComponentsDemo: typeof import('./components/app/ComponentsDemo.vue')['default']
     ComponentsDemoItem: typeof import('./components/app/ComponentsDemoItem.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
-    LanguageToggler: typeof import('./components/app/utils/LanguageToggler.vue')['default']
     Playground: typeof import('./components/app/Playground.vue')['default']
     PropsDoc: typeof import('./components/app/PropsDoc.vue')['default']
     README: typeof import('./components/README.md')['default']

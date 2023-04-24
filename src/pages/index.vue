@@ -245,9 +245,6 @@ const features = computed(() => [
       <div class="space-x-2 rtl:space-x-reverse flex">
         <VBtn variant="primary" size="sm" icon="i-carbon-sun dark:i-carbon-moon" :title="t('button.toggle_dark')"
           @click="toggleDark()" />
-        <div class="mx-2">
-          <LanguageToggler />
-        </div>
       </div>
     </div>
   </main>
