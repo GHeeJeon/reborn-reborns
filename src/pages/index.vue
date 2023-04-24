@@ -6,7 +6,7 @@ import { toggleDark } from "~/composables";
 const { t } = useI18n();
 
 useHead({
-  title: "Home",
+  title: "Reborn reborns!",
   meta: [
     {
       name: "description",
@@ -151,10 +151,11 @@ const features = computed(() => [
             {{ t("hero.cta") }}
           </VBtn>
 
-          <VBtn prepend="i-carbon-logo-github" smooth tag="a" target="_blank"
+          <!--<VBtn prepend="i-carbon-logo-github" smooth tag="a" target="_blank"
             href="https://github.com/boussadjra/vueye">
             Github
           </VBtn>
+          -->
         </div>
       </div>
       <div
