@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>useComponent</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <app></app>
+</div>
+<script>
+    Vue.component('hello-world', {
+        template: '<p>Hello World!</p>'
+    });
+
+    var app = new Vue({
+        el: '#app',
+        components: {
+            'app': {
+                template: '<div><hello-world></hello-world></div>'
+            }
+        }
+    });
+</script>
+</body>
+</html>
