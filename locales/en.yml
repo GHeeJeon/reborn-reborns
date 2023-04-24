@@ -27,10 +27,9 @@ button:
 hero:
   cta: Get started
   desc: >-
-    A rich template with many components, which are built with Tailwind CSS And
-    Vue.
+    가히리 붐은 온다.
   github: github
-  subtitle: Vue.js 3 template
+  subtitle: 가히리 캐릭터와 대화하기
 home:
   example:
     alert: This is a warning alert, you can use it to show a warning message
