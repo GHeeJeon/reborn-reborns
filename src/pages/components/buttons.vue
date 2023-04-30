@@ -142,7 +142,7 @@ useHead({
       <div class="flex flex-wrap space-x-2 space-y-2 rtl:space-x-reverse">
         <VBtn class="first:ml-2 first:mt-2" bg-color="#05afe2">Proceed</VBtn>
         <VBtn bg-color="#05e2af" text-color="#555">Next</VBtn>
-        <VBtn bg-color="#7f05fe" text-color="#fff" class="uppercase">Get Started</VBtn>
+        <VBtn bg-color="#7f05fe" text-color="#fff" class="uppercase">Reborn!</VBtn>
         <VBtn bg-color="#55f2ff" text-color="#555">Add to cart</VBtn>
       </div>
       <div class="mt-2 ml-2">
