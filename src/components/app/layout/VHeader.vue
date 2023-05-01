@@ -33,8 +33,8 @@ const { t } = useI18n()
         <div i="carbon-sun dark:carbon-moon" />
       </button>
       <LanguageToggler />
-      <button aria-label="notification"
-        class="text-xl cursor-pointer i-carbon-notification hover:bg-slate-500 text-slate-600 dark:text-white" />
+      <!-- <button aria-label="notification"
+        class="text-xl cursor-pointer i-carbon-notification hover:bg-slate-500 text-slate-600 dark:text-white" />-->
       <div class="flex items-center cursor-pointer">
         <VAvatar corner="full" :src="myLogo" alt="logo" size="xs"></VAvatar>
       </div>
