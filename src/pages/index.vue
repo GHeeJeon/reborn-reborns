@@ -147,7 +147,7 @@ const features = computed(() => [
         <!-- CTA -->
         <div class="flex flex-wrap sm:flex-nowrap items-center justify-center gap-2 mb-4 rtl:space-x-reverse">
           <VBtn variant="primary" append="i-carbon-arrow-right" class="uppercase"
-            @click="$router.push('/components/alerts')">
+            @click="$router.push('/dashboard')">
             {{ t("hero.cta") }}
           </VBtn>
 
