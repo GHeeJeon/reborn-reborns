@@ -3,9 +3,9 @@
 import { isDark } from '~/composables'
 
 useHead({
-  title: 'Vitesse',
+  title: 'Reborn reborns!',
   meta: [
-    { name: 'description', content: 'Opinionated Vite Starter Template' },
+    { name: 'description', content: '가히리 캐릭터와 대화하기' },
     {
       name: 'theme-color',
       content: computed(() => isDark.value ? '#00aba9' : '#ffffff'),

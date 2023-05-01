@@ -47,9 +47,9 @@ sidebar:
   components: Components
   dashboard: Dashboard
   home: Home
-  projects: Projects
-  reports: Reports
-  team: Team
+  vocabulary: 워드집
+  concept: 설정
+  nickname: 내 이름은...
 features:
   name: Features
   using-the-new-tools:

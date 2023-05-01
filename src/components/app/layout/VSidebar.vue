@@ -40,6 +40,26 @@ const sidebarItems = computed(() => [
     ],
   },
   {
+    title: t('sidebar.nickname'),
+    icon: 'i-carbon-collaborate',
+    path: '/nickname',
+  },
+  {
+    title: t('sidebar.vocabulary'),
+    icon: 'i-carbon-document',
+    path: '/vocabulary',
+  },
+  {
+    title: t('sidebar.concept'),
+    icon: 'i-carbon-report-data',
+    path: '/concept',
+  },
+  {
+    title: t('sidebar.calendar'),
+    icon: 'i-carbon-calendar',
+    path: '/calendar',
+  },
+  {
     title: t('sidebar.components'),
     icon: 'i-carbon-assembly-cluster',
     path: '/components',
@@ -93,26 +113,6 @@ const sidebarItems = computed(() => [
         path: '/components/radio-buttons',
       }
     ],
-  },
-  {
-    title: t('sidebar.team'),
-    icon: 'i-carbon-collaborate',
-    path: '/team',
-  },
-  {
-    title: t('sidebar.projects'),
-    icon: 'i-carbon-document',
-    path: '/projects',
-  },
-  {
-    title: t('sidebar.calendar'),
-    icon: 'i-carbon-calendar',
-    path: '/calendar',
-  },
-  {
-    title: t('sidebar.reports'),
-    icon: 'i-carbon-report-data',
-    path: '/reports',
   },
 ])
 
