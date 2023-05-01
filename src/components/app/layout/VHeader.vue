@@ -17,7 +17,9 @@ const { t } = useI18n()
   <header
     :class="` pr-2 pl-2 transition-padding duration-700 w-full  md:fixed right-0 z-20 flex flex-col items-center justify-center md:justify-between  px-4 py-2 space-y-2 shadow-md  md:py-0 md:space-y-none md:h-16 md:flex-row bg-white dark:bg-primary-900`">
     <div class="flex items-center justify-center h-16 text-5xl pl-4">
-      <RouterLink to="/" class="i-carbon-home text-primary-400" aria-label="go to home" />
+      <RouterLink to="/" class="text-primary-400" aria-label="go to home">
+        <img src="/public/favicon.svg" width="48" alt="Home" />
+      </RouterLink>
     </div>
 
     <div>
@@ -32,12 +34,11 @@ const { t } = useI18n()
       <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
         <div i="carbon-sun dark:carbon-moon" />
       </button>
-      <LanguageToggler />
       <!-- <button aria-label="notification"
-        class="text-xl cursor-pointer i-carbon-notification hover:bg-slate-500 text-slate-600 dark:text-white" />-->
+        class="text-xl cursor-pointer i-carbon-notification hover:bg-slate-500 text-slate-600 dark:text-white" />
       <div class="flex items-center cursor-pointer">
         <VAvatar corner="full" :src="myLogo" alt="logo" size="xs"></VAvatar>
-      </div>
+      </div>-->
     </div>
   </header>
 </template>
