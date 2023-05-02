@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const isOpen = ref(false)
+const isOpen = ref(true)
 const genericburgerLine
   = 'h-0.5 w-6 my-1 rounded-full bg-gray-700 dark:bg-white transition ease transform duration-300'
 const emit = defineEmits(['open'])
