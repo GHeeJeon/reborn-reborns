@@ -18,14 +18,14 @@ import CardStatsHeader from './_components/CardStatsHeader.vue';
           sequi sed fugiat.
 
         </p>
-        <template #footer>
+        <!-- <template #footer>
           <div class="flex gap-2">
             <VBadge content="Hills" variant="secondary" smooth></VBadge>
             <VBadge content="Nature" variant="secondary" smooth></VBadge>
             <VBadge content="Montains" variant="secondary" smooth></VBadge>
             <VBadge content="Trees" variant="secondary" smooth></VBadge>
           </div>
-        </template>
+        </template>-->
 
       </VCard>
 
