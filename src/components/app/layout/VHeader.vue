@@ -18,7 +18,7 @@ const { t } = useI18n()
     :class="` px-6 transition-padding duration-700 w-full  md:fixed right-0 z-20 flex flex-col items-center justify-center md:justify-between  px-4 py-2 space-y-2 shadow-md  md:py-0 md:space-y-none md:h-16 md:flex-row bg-white dark:bg-primary-900`">
     <div class="flex items-center justify-center h-16 text-5xl">
       <RouterLink to="/" class="text-primary-400" aria-label="go to home">
-        <img src="/public/favicon.svg" width="48" alt="Home" />
+        <img src="/favicon.svg" width="48" alt="Home" />
       </RouterLink>
     </div>
 
