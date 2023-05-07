@@ -48,6 +48,13 @@ const sidebarItems = computed(() => [
     title: t('sidebar.vocabulary'),
     icon: 'i-carbon-document',
     path: '/vocabulary',
+    children: [
+      {
+        title: t('sidebar.vocabulary'),
+        icon: 'i-carbon-document',
+        path: '/vocabulary/vocabulary',
+      },
+    ],
   },
   {
     title: t('sidebar.concept'),
@@ -130,7 +137,7 @@ onMounted(() => {
 </script>
 <template>
   <!-- sidebar -->
-  <aside ref="sidebar" class="sidebar" :class="[sidebarCollapsed ? 'sidebar__collapsed' : 'sidebar__not_collapsed']">
+  <aside ref="sidebar" class="sidebar" :class="[sidebarCollapsed ? 'sidebar__not_collapsed' : 'sidebar__collapsed']">
     <div>
       <div class="flex w-full">
         <BurgerMenuBtn @open="sidebarCollapsed = !sidebarCollapsed" />
@@ -141,26 +148,26 @@ onMounted(() => {
             <ul class="max-h-screen m-0 ml-0 list-none">
               <li v-for="(item, index) in sidebarItems" :key="item.title"
                 :class="`${currentIndex === index ? 'bg-gray-100 dark:bg-primary-700 ' : ''} `">
-                <span :class="`${sidebarCollapsed ? 'justify-center' : ''}
+                <span :class="`${sidebarCollapsed ? '' : 'justify-center'}
                                   ${currentIndex === index ? 'bg-gray-200 dark:bg-primary-700' : ''}
                 sidebar-item block py-4  px-4 flex items-center text-gray-600 dark:text-gray-300 rtl:space-x-reverse space-x-2 cursor-pointer  decoration-none  leading-5  group  focus:outline-none  transition duration-150 ease-in-out`"
                   @click="setCurrentIndex(index)">
                   <span :class="`${item.icon} text-lg block`" />
 
-                  <span v-if="!sidebarCollapsed" class="block">{{ item.title }}</span>
-                  <span v-if="!sidebarCollapsed && item.children" class="i-carbon-chevron-down">{{
+                  <span v-if="sidebarCollapsed" class="block">{{ item.title }}</span>
+                  <span v-if="sidebarCollapsed && item.children" class="i-carbon-chevron-down">{{
                   item.title
                   }}</span>
                 </span>
                 <CollapseTransition>
-                  <ul v-if="item.children && !sidebarCollapsed && currentIndex === index"
+                  <ul v-if="item.children && sidebarCollapsed && currentIndex === index"
                     class="opacity-75 transition-height duration-1000">
                     <li v-for="child in item.children" :key="child.title" class="pl-4 hover:scale-105 transition-all">
                       <RouterLink
                         :class="` block py-2 text-xs  px-4 flex items-center rtl:space-x-reverse space-x-2  decoration-none  leading-5  group  focus:outline-none focus:font-bold transition duration-150 ease-in-out`"
                         :to="child.path" :href="child.path">
                         <span class="i-carbon-software-resource" />
-                        <span v-if="!sidebarCollapsed">{{ child.title }}</span>
+                        <span v-if="sidebarCollapsed">{{ child.title }}</span>
                       </RouterLink>
                     </li>
                   </ul>

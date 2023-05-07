@@ -20,7 +20,7 @@ const toggleLocales = () => {
       <div i="carbon-sun dark:carbon-moon" />
     </button>
 
-    <a class="mx-2 icon-btn" :title="t('button.toggle_langs')" @click="toggleLocales">
+    <!-- <a class="mx-2 icon-btn" :title="t('button.toggle_langs')" @click="toggleLocales">
       <div i-carbon-language />
     </a>
 
@@ -30,6 +30,6 @@ const toggleLocales = () => {
 
     <a class="mx-2 icon-btn" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
       <div i-carbon-logo-github />
-    </a>
+    </a>-->
   </nav>
 </template>
